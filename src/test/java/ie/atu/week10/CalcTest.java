@@ -19,4 +19,19 @@ public class CalcTest {
         newCalc= new Calculator();
         assertEquals(2,newCalc.subtract(6,4));
     }
+    @Test
+    void testDivide()
+    {
+        newCalc = new Calculator();
+        float result = newCalc.divide(5,2);
+        assertEquals(2.5,newCalc.divide(5,2));
+    }
+    @Test
+    void testMultiply()
+    {
+        newCalc = new Calculator();
+        int result = newCalc.multiply(6,2);
+        assertEquals(12,newCalc.multiply(6,2));
+    }
+
 }
